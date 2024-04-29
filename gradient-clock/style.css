@@ -1,0 +1,46 @@
+body {
+	display: flex;
+	justify-content: center;
+	font-family: 'Dekko', cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.container {
+	color: #f1ebeb;
+	width: 20em;
+	height: 20em;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	background-image: radial-gradient(
+		circle,
+		#4f9f60,
+		#70b581,
+		#90caa1,
+		#b2e0c2,
+		#d6f5e2
+	);
+}
+
+.container:hover {
+	background-image: url('../assets/logo.png');
+	background-position: center;
+}
+
+.container:hover #greeting,
+.container:hover #time,
+.container:hover #date {
+	display: none;
+}
+
+#time {
+	font-size: 3.5em;
+}
+
+#greeting {
+	font-size: 1.5em;
+}
