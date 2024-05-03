@@ -136,10 +136,10 @@ function updateWeekProgress() {
 }
 
 function updateDayProgress() {
-  const { year, monthIndex} = getTimeInfo();
+  const { year, monthIndex, date } = getTimeInfo();
 
   const percentage = normalizePercentage(
-    getMilSecondsBetweenDates(new Date(), new Date(year, monthIndex)) /
+    getMilSecondsBetweenDates(new Date(), new Date(year, monthIndex, date)) /
       MIL_SECONDS_OF_DAY
   );
   updateProgressStyle("day-progress", percentage);
