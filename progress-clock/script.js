@@ -60,13 +60,13 @@ function updateElementContentById(id, content) {
 
 function updateDate() {
   const { year, month, date } = getTimeInfo();
-  content = `${year}.${normalizeNum(month)}.${normalizeNum(date)}`;
+  const content = `${year}.${normalizeNum(month)}.${normalizeNum(date)}`;
   updateElementContentById("date", content);
 }
 
 function updateTime() {
   const { hour, minute, second } = getTimeInfo();
-  content = `${normalizeNum(hour)}:${normalizeNum(minute)}:${normalizeNum(
+  const content = `${normalizeNum(hour)}:${normalizeNum(minute)}:${normalizeNum(
     second
   )}`;
   updateElementContentById("time", content);
